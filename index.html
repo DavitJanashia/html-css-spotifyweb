@@ -31,7 +31,7 @@
                 </a>
 
               </div>
-              
+
             </div>
 
 
@@ -66,12 +66,17 @@
             <div class="my-header-list n2">
               <h2>PLAYLIST</h2>
               <div class="my-create-playlist">
-                <span>
-                  logo
-                </span>
 
-                <a href="#">
-                  Crea playlist
+                <a id="crea-playlist" href="#">
+
+                  <div class="my-plus-box">
+                    &plus;
+                  </div>
+
+                  <span>
+                    Crea Playlist
+                  </span>
+
                 </a>
 
               </div>
@@ -79,25 +84,31 @@
 
                 <li>
                   <a href="#">
-                    song 1
+                    Nome playlist
                   </a>
                 </li>
 
                 <li>
                   <a href="#">
-                    song 2
+                    Nome playlist
                   </a>
                 </li>
 
                 <li>
                   <a href="#">
-                    song 3
+                    Nome playlist
                   </a>
                 </li>
 
                 <li>
                   <a href="#">
-                    song 4
+                    Nome playlist
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Nome playlist
                   </a>
                 </li>
 
@@ -115,18 +126,27 @@
 
               <ul>
                 <li>
-                  <span>logo</span>
+
                   <a href="#">
-                    Installa app
+
+                    <i id="install" class="far fa-arrow-alt-circle-down"></i>
+
+                    <span>Installa app</span>
+
                   </a>
                 </li>
 
                 <li>
-                  <span>logo</span>
                   <a id="profile" href="#">
-                    <img src="img/profile.svg" alt="">
-                    User User
+
+                    <div class="my-profile-box">
+                      <img src="img/profile.svg" alt="">
+                    </div>
+
+                    <span>User User</span>
+
                   </a>
+
                 </li>
               </ul>
             </div>
@@ -357,6 +377,9 @@
 
       </main>
 
+
+
+
       <footer>
 
         <div class="my-player">
@@ -365,20 +388,20 @@
 
             <div class="my-player-left-content">
 
-              <div>
-                <img src="#" alt="img-little">
+              <div id="player-left-img-box">
+                <img src="img/player_left.jpg" alt="img-little">
               </div>
 
-              <div>
-                <h5>Testotesto</h5>
-                <p>Testotesto</p>
+              <div class="my-player-left-text">
+                <h5>Sinister</h5>
+                <p>Brano nome</p>
               </div>
 
             </div>
 
             <div class="my-player-left-icons">
-              <span>&hearts;</span>
-              <span>&hearts;</span>
+              <a href="#"><i class="far fa-heart"></i></a>
+              <a href="#"><i class="far fa-folder"></i></a>
             </div>
 
           </div>
@@ -388,11 +411,11 @@
             <div class="my-middle-top">
               <div class="my-play-buttons">
 
-                <span>logo</span>
-                <span>logo</span>
-                <span>logo</span>
-                <span>logo</span>
-                <span>logo</span>
+                <a href="#"><i class="fas fa-random"></i></a>
+                <a href="#"><i class="fas fa-step-backward"></i></a>
+                <a href="#"><i id="play" class="far fa-play-circle"></i></a>
+                <a href="#"><i class="fas fa-step-forward"></i></a>
+                <a href="#"><i class="fas fa-redo"></i></a>
 
               </div>
             </div>
@@ -420,10 +443,10 @@
 
             <div class="my-some-logos-right">
 
-              <span>logo</span>
-              <span>logo</span>
-              <span>logo</span>
-              <span>line</span>
+              <a id="one" href="#"><i class="fas fa-list-ul"></i></a>
+              <a id="two" href="#"><i class="fas fa-desktop"></i></a>
+              <a id="three" href="#"><i class="fas fa-volume-up"></i></a>
+              <div id="four" class="my-player-right-line"></div>
 
             </div>
           </div>
