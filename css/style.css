@@ -3,12 +3,19 @@
   margin:0;
   /* DEBUG:  */
   border:1px solid black;
-  padding:5px;
+  /* padding:5px; */
   }
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
 
 
 body{
   font-family: ARIAL;
+  height: 100%;
+  overflow: auto;
 }
 
 ul{
@@ -29,7 +36,8 @@ header{
   background-color: red;
   grid-row:1/2;
   grid-column: 1/2;
-  overflow: auto;
+  overflow: scroll;
+  height: calc(100vh - 90px);
 }
 
 .my-navbar{
@@ -178,11 +186,18 @@ footer{
 
 .my-player-left{
   display: flex;
+  align-items: center;
+  justify-content:  space-between;
 }
 
 .my-player-left-content{
   display: flex;
 }
+
+.my-player-left-icons{
+  display: flex;
+}
+
 .my-player-middle{
   flex: 0.6;
   display: flex;
