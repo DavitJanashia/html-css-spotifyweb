@@ -5,9 +5,11 @@
   border:1px solid black;
   padding:5px;
   }
-  body{
-    font-family: ARIAL;
-  }
+
+
+body{
+  font-family: ARIAL;
+}
 
 ul{
   list-style-type: none;
@@ -27,6 +29,7 @@ header{
   background-color: red;
   grid-row:1/2;
   grid-column: 1/2;
+  overflow: auto;
 }
 
 .my-navbar{
@@ -75,6 +78,7 @@ main > *{
   justify-content: center;
   align-items: center;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 .my-main-menu-ul li{
   display: flex;
@@ -112,18 +116,20 @@ main > *{
 
 .my-album-pictures{
   display: flex;
-  /* justify-content: space-between; */
   text-align: center;
-  align-content: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: auto;
 }
+
 .my-album-pictures > *{
-  width: calc(100% / 6);
+  width: calc(97% / 6);
   /* DEBUG:  */
   min-width: 150px;
 }
 
 .my-album-pictures > *:not(:last-child){
-  margin-right:0.8%;
+  /* margin-right:0.8%; */
 }
 
 
@@ -156,4 +162,74 @@ footer{
 .my-player{
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.my-player > *{
+  /* DEBUG:  */
+  margin-right: 10px;
+}
+
+.my-player-left, .my-player-right{
+  width: 15%;
+}
+
+.my-player-left{
+  display: flex;
+}
+
+.my-player-left-content{
+  display: flex;
+}
+.my-player-middle{
+  flex: 0.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-player-middle > *{
+  flex: 0.5;
+  display: flex;
+  width: 100%;
+}
+
+.my-middle-top{
+  justify-content: center;
+}
+
+.my-play-buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.my-play-buttons > *{
+  /* margin-right: 2%; */
+}
+
+.my-play-line-bottom{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.my-player-line{
+  flex: 1;
+  height: 10px;
+  align-self: center;
+}
+
+.my-player-right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-some-logos-right{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
