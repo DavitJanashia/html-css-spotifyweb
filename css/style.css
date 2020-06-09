@@ -16,11 +16,22 @@ body{
   font-family: ARIAL;
   height: 100%;
   overflow: auto;
+  /* DEBUG:  */
+  color: #7d7f84;
+}
+
+h2, h3, h4, h5{
+  color: white;
 }
 
 ul{
   list-style-type: none;
   margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
 }
 
 /* griglia */
@@ -33,12 +44,38 @@ ul{
 }
 
 header{
-  background-color: red;
+  background-color: #000000;
   grid-row:1/2;
   grid-column: 1/2;
-  overflow: scroll;
+  overflow: auto;
   height: calc(100vh - 90px);
+  overflow-x: hidden;
 }
+
+header a{
+  color: #6d6d6d;
+}
+
+header img:not(#my-logo){
+  /* max-width: 100%; */
+  width: 30px;
+}
+
+#my-logo{
+  max-width: 100%;
+}
+
+.my-header-list.n1 a{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#profile{
+  color: white;
+}
+
+
 
 .my-navbar{
   width: 100%;
@@ -52,6 +89,21 @@ header{
   width: 100%;
 }
 
+.my-logo-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.my-logo-box{
+  width: 147px;
+}
+
+.my-logo-box a{
+  display: block;
+}
+
 .my-header-list.n1{
 }
 
@@ -59,7 +111,7 @@ header{
 }
 
 main{
-  background-color: lightblue;
+  background-color: #141922;
   grid-row: 1/2;
   grid-column: 2/3;
   overflow: auto;
@@ -69,12 +121,21 @@ main > *{
   display: flex;
 }
 .my-main-upgrade{
+  background-color: #080b12;
   justify-content: flex-end;
   align-items: center;
   /* DEBUG:  */
   height: 80px;
 }
 
+.my-main-upgrade a{
+  color: white;
+}
+
+
+.my-main-menu a{
+  color: #696b70;
+}
 
 .my-main-menu{
   justify-content: center;
@@ -162,7 +223,7 @@ main > *{
 }
 
 footer{
-  background-color: yellow;
+  background-color: #282828;
   grid-row: 2/3;
   grid-column: 1/3
 }
