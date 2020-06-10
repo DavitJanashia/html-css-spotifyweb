@@ -211,6 +211,7 @@ main{
   grid-row: 1/2;
   grid-column: 2/3;
   overflow: auto;
+  padding: 0 20px;
 }
 
 main > *{
@@ -222,6 +223,9 @@ main > *{
   align-items: center;
   /* DEBUG:  */
   height: 80px;
+  padding-right: 7px;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .my-main-upgrade a{
@@ -232,15 +236,20 @@ main > *{
   font-size: 12px;
 }
 
-
-.my-main-menu a{
-  color: #696b70;
-}
-
 .my-main-menu{
   justify-content: center;
   align-items: center;
+  height: 60px;
 }
+
+
+.my-main-menu a{
+  color: #696b70;
+  font-size: 13.5px;
+  font-weight:bolder;
+}
+
+
 
 .my-main-menu-ul{
   display: flex;
@@ -267,8 +276,23 @@ main > *{
   width: 40px;
 }
 
+
+
 .my-section{
   flex-direction: column;
+  margin-bottom: 35px;
+}
+
+.my-h2-album{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 15.5px;
+}
+
+.my-p-album{
+  font-size: 13px;
+  font-weight: bolder;
 }
 .my-section > *{
   width: 100%;
@@ -281,6 +305,7 @@ main > *{
 }
 
 .my-section.n1{
+
 }
 
 .my-album-pictures{
@@ -289,12 +314,25 @@ main > *{
   justify-content: space-between;
   flex-wrap: wrap;
   width: auto;
+  padding-top: 20px;
 }
+
 
 .my-album-pictures > *{
   width: calc(97% / 6);
   /* DEBUG:  */
   min-width: 150px;
+}
+
+.my-album-pictures h3 {
+  padding: 15px 0 5px 0;
+  font-size: 16px;
+}
+
+.my-album-pictures p {
+  padding: 5px 0;
+  font-size: 13px;
+  font-weight: bolder;
 }
 
 .my-album-pictures > *:not(:last-child){
@@ -346,8 +384,12 @@ footer i{
   /* margin-right: 10px; */
 }
 
-.my-player-left, .my-player-right{
-  width: 15%;
+.my-player-left{
+  min-width: 160px;
+}
+
+.my-player-right{
+  min-width: 200px;
 }
 
 #player-left-img-box{
@@ -373,10 +415,11 @@ footer i{
 
 .my-player-left-icons{
   display: flex;
+  flex-direction: column;
 }
 
 .my-player-left-icons a:first-child{
-  margin-right: 15px;
+  /* margin-right: 15px; */
 }
 
 .my-player-left-text{
@@ -398,6 +441,8 @@ footer i{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .my-player-middle > *{
@@ -436,6 +481,11 @@ footer i{
   width: 100%;
   justify-content: space-between;
   align-items: center;
+}
+
+.my-player-time{
+  font-size: 10px;
+  color: white;
 }
 
 .my-player-line{
