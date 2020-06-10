@@ -249,6 +249,22 @@ main > *{
   font-weight:bolder;
 }
 
+.my-main-menu-line{
+  width: 30px;
+  height: 2px;
+  border-radius: 3px;
+  background-color: #adff2f;
+  margin-top: 2px;
+  visibility:hidden
+}
+
+.my-main-menu-line.n1{
+  visibility: visible;
+}
+
+
+
+
 
 
 .my-main-menu-ul{
@@ -271,12 +287,6 @@ main > *{
   text-align: center;
   width: 120px;
 }
-
-.my-main-menu-ul li div{
-  width: 40px;
-}
-
-
 
 .my-section{
   flex-direction: column;
