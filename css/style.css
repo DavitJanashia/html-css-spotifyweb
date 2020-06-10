@@ -90,6 +90,10 @@ header a#crea-playlist .my-plus-box{
   max-width: 100%;
 }
 
+#my-logo-small{
+  display: none;
+}
+
 
 .my-header-list.n1 a{
   display: flex;
@@ -204,6 +208,7 @@ header a#crea-playlist .my-plus-box{
 
 #install{
   margin-right: 16px;
+  color: white;
 }
 
 main{
@@ -234,12 +239,17 @@ main > *{
   border: 1px solid white;
   padding: 12px 35px;
   font-size: 12px;
+
+  transition: 0.3s;
+}
+
+.my-main-upgrade a:hover{
+  transform: scale(1.1);
 }
 
 .my-main-menu{
   justify-content: center;
   align-items: center;
-  height: 60px;
 }
 
 
@@ -273,6 +283,7 @@ main > *{
   align-items: center;
   list-style-type: none;
   flex-wrap: wrap;
+  padding: 10px 0;
 }
 .my-main-menu-ul li{
   display: flex;
@@ -280,8 +291,10 @@ main > *{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  padding: 5px 0;
+  margin-bottom: 10px;
 }
+
 .my-main-menu-ul li a{
   display: inline-block;
   text-align: center;
@@ -535,4 +548,112 @@ footer i{
 
 #four{
   width: 55%;
+}
+
+/* media query */
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+  .my-all-container{
+    display: grid;
+    /* grid-gap: 2px; */
+    grid-template-rows:calc(100vh - 90px) 90px;
+    grid-template-columns:55px calc(100% - 55px);
+  }
+
+  header{
+    width: 55px;
+    padding: 4px;
+  }
+
+  #my-logo{
+    display: none;
+  }
+
+  .my-logo-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #my-logo-small{
+    display: block;
+    margin: 0!important;
+    padding-top: 5px;
+    width: 28px!important;
+  }
+
+  .my-header-list.n1{
+    margin-top: -10px;
+  }
+
+  .my-header-list.n1 span{
+    display: none;
+  }
+
+  .my-header-list.n1 img{
+    margin-right: 0 !important;
+  }
+
+  .my-header-list.n1 li{
+    border: none !important;
+    display: flex;
+    justify-content: center;
+    margin: 0!important;
+    padding: 0!important;
+  }
+
+  .my-header-list.n1 .myhome, .my-header-list.n1 .my-search,   .my-header-list.n1 .my-library{
+    width: 100%;
+  }
+
+  .my-header-list.n2{
+    display: none;
+  }
+
+  .my-header-list.n3 span{
+    display: none;
+  }
+
+  .my-header-list.n3 li{
+    border: none!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #install{
+    position: relative;
+    top: 7px;
+  }
+
+  .my-header-list.n3 a#profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .my-profile-box{
+    margin: 0;
+  }
+
+  .my-header-list.n3 i, .my-header-list.n3 img{
+    margin: 0!important;
+  }
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+}
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
 }
