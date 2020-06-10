@@ -386,6 +386,7 @@ main > *{
   width: calc(97% / 6);
   /* DEBUG:  */
   min-width: 150px;
+  max-width: 300px!important;
 }
 
 .my-album-pictures h3 {
@@ -592,6 +593,7 @@ footer i{
 @media (max-width: 394px){
   .my-album-pictures > *{
     width: 97% !important;
+    max-width: 300px!important;
   }
 
   .my-album-pictures > div:not(.my-empty){
@@ -725,6 +727,7 @@ footer i{
     width: calc(97% / 2);
     /* DEBUG:  */
     min-width: 150px;
+    max-width: 300px!important;
   }
 
 
@@ -736,6 +739,7 @@ footer i{
     width: calc(97% / 2);
     /* DEBUG:  */
     min-width: 150px;
+    max-width: 300px!important;
   }
 
   .my-main-menu-ul li a{
@@ -751,4 +755,11 @@ footer i{
 
  /* Extra large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
+}
+
+@media (min-width: 2100px){
+  
+  .my-section.n1 .my-empty {
+    display: none;
+  }
 }
